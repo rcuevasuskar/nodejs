@@ -1,8 +1,6 @@
 #!/usr/bin/env
 
-var rest = require('restler');
 var express=require('express');
-var http = require('http');
 var fs = require('fs');
 var index = fs.readFileSync('index.html');
 var app = express();
