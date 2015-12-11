@@ -4,7 +4,7 @@
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type='application/javascript'>
-	var server_url = 'http://127.0.0.1:5000/';
+	var server_url = 'https://127.0.0.1:5000/';
 	var request;
 			
 	var x;
@@ -18,11 +18,8 @@
 	}        
 
 	function crear() {
-		console.log("debug1");
 		request = new XMLHttpRequest();
-		console.log("debug2");
 		request.open('PUT', server_url + 'crear/' + $('#nombreContador').val(), true);
-		console.log("debug3");
 		request.onreadystatechange= mostrar_contador;
 		request.send();
 	}
