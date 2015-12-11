@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.set('port', (process.env.PORT || p));
+app.set('port', (process.env.PORT || puerto));
 
 app.get('/', function(req,res) {
   res.end(index);
